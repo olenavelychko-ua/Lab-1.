@@ -12,7 +12,8 @@ class Program
         {
             array[i] = Convert.ToInt32(parts[i]);
         }
-        Console.WriteLine("Sorted array: {0}", string.Join(", ", Bubble_Sort.BubbleSort(array)));
+        Bubble_Sort obj = new Bubble_Sort();
+        Console.WriteLine("Sorted array: {0}", string.Join(", ", obj.Sort(array)));
         Console.ReadLine();
     }
 
